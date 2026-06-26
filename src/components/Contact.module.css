@@ -1,0 +1,91 @@
+.contact {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 52px 48px;
+  max-width: 560px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact__card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 160px;
+  background: radial-gradient(ellipse at center, rgba(57, 211, 83, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact__headline {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contact__sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-hover);
+  background: transparent;
+  color: var(--white);
+  transition: border-color var(--transition), color var(--transition), transform var(--transition);
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+
+.contact-btn:hover {
+  border-color: var(--green);
+  color: var(--green);
+  transform: translateY(-1px);
+}
+
+.contact-btn svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+  .contact__card {
+    padding: 36px 24px;
+  }
+  .contact__links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

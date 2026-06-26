@@ -1,0 +1,14 @@
+.footer {
+  padding: 28px 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.footer__text {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted-dim);
+  letter-spacing: 0.06em;
+}
