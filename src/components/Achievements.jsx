@@ -7,24 +7,37 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS = [
   {
-    icon: '🥇',
-    accent: 'blue',
-    title: '2× Hackathon Runner-Up',
-    subtitle: 'Two runner-up finishes at college-level hackathons — built and shipped under pressure, both times.',
+    icon: '',
+    accent: 'purple',
+    title: 'Mini-Hackathon\'26 — Runner-Up',
+    subtitle: 'Presented Club Event Booking System.',
   },
   {
-    icon: '🏫',
+    icon: '',
+    accent: 'blue',
+    title: 'E-Horizon\'26 Webify — Runner-Up',
+    subtitle: 'Built a inventory management and re-order system.',
+  },
+  {
+    icon: '',
+    accent: 'cyan',
+    title: 'Technical Quiz First prize',
+    subtitle: '',
+  },
+  {
+    icon: '',
     accent: 'purple',
+    title: 'Mathwizard Second prize',
+    subtitle: ' ',
+  },
+  {
+    icon: '',
+    accent: 'blue',
     title: 'SHA System — Official Association Website',
-    subtitle: 'Built the official site for KEC\'s Science and Humanities Association. Running in production at sh.kongu.edu.',
+    subtitle: 'Built the official site for Science and Humanities Association, KEC.',
     link: 'https://sh.kongu.edu',
   },
-  {
-    icon: '📊',
-    accent: 'blue',
-    title: 'CGPA 9.11 — Semester 1, Mechatronics @ KEC',
-    subtitle: 'Topped the first semester while shipping real projects on the side.',
-  },
+ 
 ];
 
 export default function Achievements() {

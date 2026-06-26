@@ -12,15 +12,16 @@ const SKILL_CARDS = [
     tags: ['FastAPI', 'Node.js', 'Express', 'TypeScript', 'Python', 'REST APIs', 'JWT Auth', 'PostgreSQL', 'MongoDB'],
   },
   {
-    color: 'blue',
-    label: 'Embedded · Robotics',
-    tags: ['ESP32', 'Arduino', 'C/C++', 'L298N', 'MPU6050', 'Bluetooth', 'DC Motors', 'IoT'],
-  },
-  {
     color: 'purple',
     label: 'Frontend',
     tags: ['React', 'HTML/CSS'],
   },
+  {
+    color: 'blue',
+    label: 'Embedded · Robotics',
+    tags: ['ESP32', 'Arduino', 'C/C++'],
+  },
+  
 ];
 
 export default function Skills() {

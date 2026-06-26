@@ -9,7 +9,7 @@ const PHRASES = [
 
 const BADGES = [
   'FastAPI · Node.js',
-  'PostgreSQL · MongoDB · Prisma',
+  'PostgreSQL · MongoDB',
   'React',
   'ESP32 · Arduino · C++',
 ];
@@ -73,12 +73,8 @@ export default function Hero() {
   useEffect(() => {
     const els = [eyebrowRef.current, nameRef.current, roleRef.current, typewriterRef.current, badgesRef.current, buttonsRef.current];
 
-    // Kill any tweens left over from a previous mount (e.g. StrictMode's
-    // dev-only mount -> unmount -> remount cycle) so they don't race with
-    // this run and leave elements stuck at opacity: 0.
     gsap.killTweensOf(els);
 
-    // Establish starting state before timeline fires
     gsap.set(els, { y: 30, opacity: 0 });
 
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
@@ -89,9 +85,6 @@ export default function Hero() {
       .to(badgesRef.current,  { opacity: 1, y: 0, duration: 0.6 }, 0.9)
       .to(buttonsRef.current, { opacity: 1, y: 0, duration: 0.6 }, 1.06);
 
-    // Cleanup: if this effect's component unmounts (StrictMode's phantom
-    // unmount, or a real unmount later), stop the timeline so it can't
-    // keep ticking in the background or fight a future remount's timeline.
     return () => {
       tl.kill();
     };

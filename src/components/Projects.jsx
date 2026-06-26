@@ -21,6 +21,15 @@ const ExternalIcon = () => (
 
 const PROJECTS = [
   {
+    icon: '🎯',
+    accent: 'green',
+    name: 'KEC Club Event System',
+    desc: 'Full-stack event management for KEC. Role-based access for Students, Admins, and Faculty with JWT auth, leaderboards, OD automation, and certificate uploads.',
+    tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
+    github: 'https://github.com/vipinsamy-sys',
+  },
+  
+  {
     icon: '🏫',
     accent: 'blue',
     name: 'SHA — Science & Humanities Association Website',
@@ -28,14 +37,6 @@ const PROJECTS = [
     tags: ['Web', 'HTML/CSS', 'JavaScript'],
     live: 'https://sh.kongu.edu',
     isLive: true,
-  },
-  {
-    icon: '🎯',
-    accent: 'green',
-    name: 'KEC Club Event System',
-    desc: 'Full-stack event management for KEC. Role-based access for Students, Admins, and Faculty with JWT auth, leaderboards, OD automation, and certificate uploads.',
-    tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
-    github: 'https://github.com/vipinsamy-sys',
   },
   {
     icon: '🛍️',

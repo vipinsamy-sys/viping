@@ -7,7 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
   { value: 9.11, display: '9.11', label: 'CGPA · Sem 1', decimals: 2 },
-  { value: 2, display: '2×', label: 'Runner-Up Finishes', decimals: 0 },
 ];
 
 export default function About() {
@@ -59,30 +58,32 @@ export default function About() {
     <section id="about" className={`${styles.about} section`} ref={sectionRef}>
       <div className="container">
         <p className="section-label">// about</p>
-        <h2 className="section-heading">Who I <span>Am</span></h2>
+        <h2 className="section-heading"><span>I Am</span> Vipin G.</h2>
 
         <div className={styles.about__grid}>
           <div className={styles.about__bio} ref={bioRef}>
-            <p>
-              I&apos;m a first-year Mechatronics Engineering student at KEC Perundurai, but the title is incidental.
-              What actually drives me is building things that work — not prototypes that live in a deck,
-              but systems that run in the real world. I&apos;ve already shipped software inside the college:
-              an event management platform, an official association website, an e-commerce backend deployed
-              on Railway and Vercel. Real infrastructure, real users, real edge cases.
-            </p>
-            <p>
-              I work end-to-end — from the ESP32 talking to a motor driver to the FastAPI endpoint
-              serving a React frontend. Backend, embedded, a bit of ML. The stack isn&apos;t the point;
-              the problem is. I pick whatever closes the gap between the idea and something you can
-              actually use. That habit of thinking about the whole system — not just the part assigned
-              to me — is what I keep coming back to.
-            </p>
-            <p>
-              I care a lot about what gets built and why. The best version of any project starts
-              with the right question, and I&apos;d rather spend an hour framing the problem well than
-              a week building the wrong thing cleanly. Still early, obviously — but I&apos;m shipping,
-              learning fast, and not particularly patient about it.
-            </p>
+            <div className={styles.about__bio} ref={bioRef}>
+  <p>
+    First-year Mechatronics Engineering student at Kongu Engineering College.
+  </p>
+
+  <p>
+    Interested in backend systems, embedded systems, robotics, and
+    entrepreneurship. Also exploring freelancing, 3D printing, and improving
+    through hackathons — both building and understanding how problems
+    become products.
+  </p>
+
+  <p>
+    Across projects and hackathons, I&apos;ve usually been the one doing the
+    research, problem framing, and keeping the team pointed at the
+    right thing to build.
+  </p>
+
+  <p>
+    I&apos;m early. But I&apos;m moving.
+  </p>
+</div>
           </div>
 
           <div className={styles.about__stats}>
