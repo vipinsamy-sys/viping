@@ -62,28 +62,26 @@ export default function About() {
 
         <div className={styles.about__grid}>
           <div className={styles.about__bio} ref={bioRef}>
-            <div className={styles.about__bio} ref={bioRef}>
-  <p>
-    First-year Mechatronics Engineering student at Kongu Engineering College.
-  </p>
+            <p>
+              Second-year Mechatronics Engineering student at Kongu Engineering College.
+            </p>
 
-  <p>
-    Interested in backend systems, embedded systems, robotics, and
-    entrepreneurship. Also exploring freelancing, 3D printing, and improving
-    through hackathons — both building and understanding how problems
-    become products.
-  </p>
+            <p>
+              Interested in backend systems, embedded systems, robotics, and
+              entrepreneurship. Also exploring freelancing, 3D printing, and improving
+              through hackathons — both building and understanding how problems
+              become products.
+            </p>
 
-  <p>
-    Across projects and hackathons, I&apos;ve usually been the one doing the
-    research, problem framing, and keeping the team pointed at the
-    right thing to build.
-  </p>
+            <p>
+              Across projects and hackathons, I&apos;ve usually been the one doing the
+              research, problem framing, and keeping the team pointed at the
+              right thing to build.
+            </p>
 
-  <p>
-    I&apos;m early. But I&apos;m moving.
-  </p>
-</div>
+            <p className={styles.about__tagline}>
+              I&apos;m early. But I&apos;m moving.
+            </p>
           </div>
 
           <div className={styles.about__stats}>

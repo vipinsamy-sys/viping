@@ -7,37 +7,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS = [
   {
-    icon: '',
     accent: 'purple',
     title: 'Mini-Hackathon\'26 — Runner-Up',
     subtitle: 'Presented Club Event Booking System.',
   },
   {
-    icon: '',
     accent: 'blue',
     title: 'E-Horizon\'26 Webify — Runner-Up',
     subtitle: 'Built a inventory management and re-order system.',
   },
   {
-    icon: '',
     accent: 'cyan',
     title: 'Technical Quiz First prize',
     subtitle: '',
   },
   {
-    icon: '',
     accent: 'purple',
     title: 'Mathwizard Second prize',
-    subtitle: ' ',
+    subtitle: '',
   },
-  {
-    icon: '',
-    accent: 'blue',
-    title: 'SHA System — Official Association Website',
-    subtitle: 'Built the official site for Science and Humanities Association, KEC.',
-    link: 'https://sh.kongu.edu',
-  },
- 
+  
 ];
 
 export default function Achievements() {
@@ -75,7 +64,7 @@ export default function Achievements() {
               ref={el => (cardsRef.current[i] = el)}
               onClick={a.link ? () => window.open(a.link, '_blank') : undefined}
             >
-              <span className={styles['achievement-card__icon']}>{a.icon}</span>
+              <span className={`${styles['achievement-card__dot']} ${styles[`dot-${a.accent}`]}`} />
               <div className={styles['achievement-card__body']}>
                 <div className={styles['achievement-card__title']}>{a.title}</div>
                 <div className={styles['achievement-card__subtitle']}>{a.subtitle}</div>

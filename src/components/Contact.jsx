@@ -57,7 +57,7 @@ export default function Contact() {
               GitHub
             </a>
             <a
-              href="mailto:vipinsamy2021@gmail.com"
+              href="mailto:vipinsamy@gmail.com"
               className={styles['contact-btn']}
             >
               <MailIcon />

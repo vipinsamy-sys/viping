@@ -7,6 +7,17 @@
   z-index: 1;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(57, 211, 83, 0.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+
 .hero__content {
   max-width: 720px;
 }

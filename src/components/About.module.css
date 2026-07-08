@@ -20,6 +20,11 @@
   margin-bottom: 0;
 }
 
+.about__tagline {
+  color: var(--green) !important;
+  font-weight: 500;
+}
+
 .about__stats {
   display: flex;
   flex-direction: column;

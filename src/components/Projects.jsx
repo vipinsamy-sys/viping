@@ -21,7 +21,6 @@ const ExternalIcon = () => (
 
 const PROJECTS = [
   {
-    icon: '🎯',
     accent: 'green',
     name: 'KEC Club Event System',
     desc: 'Full-stack event management for KEC. Role-based access for Students, Admins, and Faculty with JWT auth, leaderboards, OD automation, and certificate uploads.',
@@ -30,7 +29,6 @@ const PROJECTS = [
   },
   
   {
-    icon: '🏫',
     accent: 'blue',
     name: 'SHA — Science & Humanities Association Website',
     desc: 'Official website for KEC\'s Science and Humanities Association. Live, serving the college community.',
@@ -39,7 +37,6 @@ const PROJECTS = [
     isLive: true,
   },
   {
-    icon: '🛍️',
     accent: 'purple',
     name: 'Suguna E-Commerce',
     desc: 'Production deployment on Vercel and Railway. FastAPI backend with MongoDB Atlas, Vite asset path resolution, and full cart/order flow.',
@@ -47,7 +44,6 @@ const PROJECTS = [
     github: 'https://github.com/vipinsamy-sys',
   },
   {
-    icon: '🤖',
     accent: 'cyan',
     name: 'ESP32 RC Car',
     desc: 'ESP32-CAM module with Bluetooth control and L298N motor driver integration. Real hardware build — drives, steers, and streams.',
@@ -55,7 +51,6 @@ const PROJECTS = [
     github: 'https://github.com/vipinsamy-sys',
   },
   {
-    icon: '📦',
     accent: 'green',
     name: 'Inventory Intelligence System',
     desc: 'Smart inventory tracking with automated stock-level logic and reorder triggers. Keeps warehouse state consistent without manual intervention.',
@@ -63,7 +58,6 @@ const PROJECTS = [
     github: 'https://github.com/vipinsamy-sys',
   },
   {
-    icon: '🧬',
     accent: 'blue',
     name: 'ML Health Tracker',
     desc: 'ML-powered health prediction with a Flask backend, trained classification model, and an OpenAI GPT-4o-mini chatbox for contextual health Q&A.',
@@ -97,10 +91,6 @@ export default function Projects() {
 
         <div className={styles.projects__grid}>
           {PROJECTS.map((p, i) => {
-            const cardProps = p.live
-              ? { as: 'a', href: p.live, target: '_blank', rel: 'noopener noreferrer' }
-              : {};
-
             return (
               <div
                 key={p.name}
@@ -110,7 +100,7 @@ export default function Projects() {
                 style={{ cursor: p.live || p.github ? 'pointer' : 'default' }}
               >
                 <div className={styles['project-card__header']}>
-                  <span className={styles['project-card__icon']}>{p.icon}</span>
+                  <span className={`${styles['project-card__dot']} ${styles[`dot-${p.accent}`]}`} />
                   {p.isLive && (
                     <span className={styles['project-card__badge']}>↗ live</span>
                   )}
