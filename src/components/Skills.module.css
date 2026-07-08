@@ -1,5 +1,17 @@
 .skills {
   padding: var(--section-padding);
+  position: relative;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  bottom: -5%;
+  right: -10%;
+  width: 45%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, rgba(86, 211, 100, 0.04) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .skills__grid {
@@ -9,13 +21,23 @@
 }
 
 .skill-card {
-  background: var(--bg-card);
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 24px;
-  border-top-width: 2px;
+  position: relative;
   transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
   opacity: 0;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 .skill-card:hover {
@@ -23,28 +45,25 @@
   box-shadow: 0 12px 40px rgba(0,0,0,0.4);
 }
 
-.skill-card--green {
-  border-top-color: var(--green);
+.skill-card--green::before {
+  background: linear-gradient(90deg, var(--green), transparent);
 }
 .skill-card--green:hover {
   border-color: var(--green);
-  border-top-color: var(--green);
 }
 
-.skill-card--blue {
-  border-top-color: var(--blue);
+.skill-card--blue::before {
+  background: linear-gradient(90deg, var(--blue), transparent);
 }
 .skill-card--blue:hover {
   border-color: var(--blue);
-  border-top-color: var(--blue);
 }
 
-.skill-card--purple {
-  border-top-color: var(--purple);
+.skill-card--purple::before {
+  background: linear-gradient(90deg, var(--purple), transparent);
 }
 .skill-card--purple:hover {
   border-color: var(--purple);
-  border-top-color: var(--purple);
 }
 
 .skill-card__label {

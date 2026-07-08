@@ -1,5 +1,17 @@
 .projects {
   padding: var(--section-padding);
+  position: relative;
+}
+
+.projects::before {
+  content: '';
+  position: absolute;
+  top: -5%;
+  left: -10%;
+  width: 55%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(188, 140, 255, 0.06) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .projects__grid {
@@ -9,7 +21,7 @@
 }
 
 .project-card {
-  background: var(--bg-card);
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 24px;
@@ -46,10 +58,10 @@
 }
 
 /* Accent colors for top border */
-.accent-green::before { background: var(--green); }
-.accent-blue::before  { background: var(--blue); }
-.accent-purple::before { background: var(--purple); }
-.accent-cyan::before  { background: #56d364; }
+.accent-green::before { background: linear-gradient(90deg, var(--green), transparent); }
+.accent-blue::before  { background: linear-gradient(90deg, var(--blue), transparent); }
+.accent-purple::before { background: linear-gradient(90deg, var(--purple), transparent); }
+.accent-cyan::before  { background: linear-gradient(90deg, #56d364, transparent); }
 
 .project-card__header {
   display: flex;
@@ -117,7 +129,7 @@
   padding: 2px 7px;
   border-radius: 3px;
   border: 1px solid var(--border);
-  color: var(--muted-dim);
+  color: var(--muted);
   background: var(--bg-elevated);
 }
 

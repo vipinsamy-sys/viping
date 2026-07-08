@@ -1,5 +1,17 @@
 .about {
   padding: var(--section-padding);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 50%;
+  height: 70%;
+  background: radial-gradient(ellipse at center, rgba(88, 166, 255, 0.06) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .about__grid {

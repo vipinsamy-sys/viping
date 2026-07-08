@@ -8,7 +8,7 @@
 
 .contact__card {
   position: relative;
-  background: var(--bg-card);
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 52px 48px;

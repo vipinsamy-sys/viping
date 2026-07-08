@@ -95,7 +95,7 @@ export default function Hero() {
       <div className="container">
         <div className={styles.hero__content}>
           <p ref={eyebrowRef} className={styles.hero__eyebrow}>
-            Mechatronics Engineer · Builder
+            Mechatronics Engineering student · Builder
           </p>
 
           <h1 ref={nameRef} className={styles.hero__name}>

@@ -9,7 +9,7 @@ const SKILL_CARDS = [
   {
     color: 'green',
     label: 'Backend',
-    tags: ['FastAPI', 'Node.js', 'Express', 'TypeScript', 'Python', 'REST APIs', 'JWT Auth', 'PostgreSQL', 'MongoDB'],
+    tags: ['FastAPI', 'Node.js', 'Express' , 'REST APIs', 'JWT Auth', 'PostgreSQL', 'MongoDB'],
   },
   {
     color: 'purple',
